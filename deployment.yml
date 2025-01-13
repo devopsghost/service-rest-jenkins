@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: service-rest-jenkins
-          image: cp22590/service-rest-jenkins:3.0.0
+          image: cp22590/service-rest-jenkins:4.0.0
           ports:
             - containerPort: 9080
           env:
