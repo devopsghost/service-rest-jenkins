@@ -14,8 +14,11 @@
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <file>${LOGS}/spring-boot-logger.log</file>
         <append>true</append>
-        <encoder>
+        <!--<encoder>
             <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>-->
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <customFields>{"app_name":"service-rest-jenkins","environment":"local-dev"}</customFields>
         </encoder>
     </appender>
 

@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>org.chintanu</groupId>
 	<artifactId>service-rest-jenkins</artifactId>
-	<version>4.0.0</version>
+	<version>5.0.0</version>
 	<name>service-rest-jenkins</name>
 	<description>Demo project for REST service using Jenkins</description>
 	<properties>
@@ -29,6 +29,11 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+			<version>6.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
